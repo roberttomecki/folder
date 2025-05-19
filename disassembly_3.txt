@@ -1,0 +1,56 @@
+
+output_3.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	02                            	rts
+   1:	0b                            	bra.s	0x4
+   2:	0f                            	bra.s	0x9
+   3:	13                            	beq.s	0x6
+   4:	1a                            	bne.s	0xe
+   5:	21 28                         	bne.b	0x2d
+   7:	2c 31                         	bo.b	0x38
+   9:	37                            	*unknown*
+   a:	3a 3e 45                      	beq.w	0x4548
+   d:	4a 51 56 5c                   	add	23638[r5].ub, r1
+  11:	60 69                         	sub	#6, r9
+  13:	6d 71                         	shll	#23, r1
+  15:	05 08 0b 0e                   	bsr.a	0xe0b1d
+  19:	11                            	beq.s	0x22
+  1a:	14                            	beq.s	0x1e
+  1b:	17                            	beq.s	0x22
+  1c:	1a                            	bne.s	0x26
+  1d:	1d                            	bne.s	0x22
+  1e:	02                            	rts
+  1f:	02                            	rts
+  20:	02                            	rts
+  21:	02                            	rts
+  22:	02                            	rts
+  23:	02                            	rts
+  24:	02                            	rts
+  25:	20 23                         	beq.b	0x48
+  27:	26 29                         	bpz.b	0x50
+  29:	2c 2f                         	bo.b	0x58
+  2b:	02                            	rts
+  2c:	0a                            	bra.s	0x36
+  2d:	0e                            	bra.s	0x33
+  2e:	12                            	beq.s	0x38
+  2f:	16                            	beq.s	0x35
+  30:	1a                            	bne.s	0x3a
+  31:	1e                            	bne.s	0x37
+  32:	22 26                         	bc.b	0x58
+  34:	2a 2e                         	bgt.b	0x62
+  36:	32                            	*unknown*
+  37:	36                            	*unknown*
+  38:	3a 3e 42                      	beq.w	0x4276
+  3b:	02                            	rts
+  3c:	05 08 0b 0e                   	bsr.a	0xe0b44
+  40:	11                            	beq.s	0x49
+  41:	14                            	beq.s	0x45
+  42:	17                            	beq.s	0x49
+  43:	1a                            	bne.s	0x4d
+  44:	1d                            	bne.s	0x49
+  45:	Address 0x0000000000000046 is out of bounds.
+

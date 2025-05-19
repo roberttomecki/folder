@@ -1,0 +1,71 @@
+
+output_7.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	ff ff                         	*unknown*
+   2:	ff ff                         	*unknown*
+   4:	d7 6e f4                      	mov.w	r14, 488[r6]
+   7:	ff ff                         	*unknown*
+   9:	ff ff                         	*unknown*
+   b:	ff ff                         	*unknown*
+   d:	ff ff                         	*unknown*
+   f:	ff d7                         	*unknown*
+  11:	6e f4                         	pushm	r15-r4
+  13:	ff d7                         	*unknown*
+  15:	6e f4                         	pushm	r15-r4
+  17:	ff d7                         	*unknown*
+  19:	6e f4                         	pushm	r15-r4
+  1b:	ff d7                         	*unknown*
+  1d:	6e f4                         	pushm	r15-r4
+  1f:	ff ff                         	*unknown*
+  21:	ff ff                         	*unknown*
+  23:	ff ff                         	*unknown*
+  25:	ff ff                         	*unknown*
+  27:	ff ff                         	*unknown*
+  29:	ff ff                         	*unknown*
+  2b:	ff ff                         	*unknown*
+  2d:	ff ff                         	*unknown*
+  2f:	ff d7                         	*unknown*
+  31:	6e f4                         	pushm	r15-r4
+  33:	ff d7                         	*unknown*
+  35:	6e f4                         	pushm	r15-r4
+  37:	ff d7                         	*unknown*
+  39:	6e f4                         	pushm	r15-r4
+  3b:	ff d7                         	*unknown*
+  3d:	6e f4                         	pushm	r15-r4
+  3f:	ff d7                         	*unknown*
+  41:	6e f4                         	pushm	r15-r4
+  43:	ff d7                         	*unknown*
+  45:	6e f4                         	pushm	r15-r4
+  47:	ff d7                         	*unknown*
+  49:	6e f4                         	pushm	r15-r4
+  4b:	ff d7                         	*unknown*
+  4d:	6e f4                         	pushm	r15-r4
+  4f:	ff cd                         	*unknown*
+  51:	6e f4                         	pushm	r15-r4
+  53:	ff cf                         	*unknown*
+  55:	6e f4                         	pushm	r15-r4
+  57:	ff d7                         	*unknown*
+  59:	6e f4                         	pushm	r15-r4
+  5b:	ff d1                         	*unknown*
+  5d:	6e f4                         	pushm	r15-r4
+  5f:	ff d7                         	*unknown*
+  61:	6e f4                         	pushm	r15-r4
+  63:	ff d3                         	*unknown*
+  65:	6e f4                         	pushm	r15-r4
+  67:	ff d7                         	*unknown*
+  69:	6e f4                         	pushm	r15-r4
+  6b:	ff d7                         	*unknown*
+  6d:	6e f4                         	pushm	r15-r4
+  6f:	ff d7                         	*unknown*
+  71:	6e f4                         	pushm	r15-r4
+  73:	ff d7                         	*unknown*
+  75:	6e f4                         	pushm	r15-r4
+  77:	ff d5                         	*unknown*
+  79:	6e f4                         	pushm	r15-r4
+  7b:	ff 00 00                      	sub	r0, r0, r0
+  7e:	Address 0x000000000000007f is out of bounds.
+

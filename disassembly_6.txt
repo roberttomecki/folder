@@ -1,0 +1,24 @@
+
+output_6.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	00                            	brk
+   1:	00                            	brk
+   2:	f4 ff                         	*unknown*
+   4:	d0 9f                         	mov.w	[r9], [r15]
+   6:	ff ff                         	*unknown*
+   8:	00                            	brk
+   9:	00                            	brk
+   a:	f4 ff                         	*unknown*
+   c:	3e 75 55                      	mov.l	#85, 20[r7]
+   f:	2d 53                         	bno.b	0x62
+  11:	20 46                         	beq.b	0x57
+  13:	49 52 4d                      	add	77[r5].ub, r2
+  16:	57 41                         	or	r4, r1
+  18:	52 45 00 00                   	and	0[r4].ub, r5
+  1c:	ff ff                         	*unknown*
+  1e:	94 21                         	mov.w	r1, 32[r2]
+  20:	01                            	dbt

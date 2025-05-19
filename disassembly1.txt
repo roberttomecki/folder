@@ -1,0 +1,2042 @@
+
+output_1.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000000 <.data>:
+       0:	fd 73 02 00 15 00 00          	mvtc	#0x1500, usp
+       7:	fd 73 0a 00 18 00 00          	mvtc	#0x1800, isp
+       e:	fb e2 c8 07 f4 ff             	mov.l	#0xfff407c8, r14
+      14:	fd 68 ec                      	mvtc	r14, intb
+      17:	fb ea 00 01                   	mov.l	#256, r14
+      1b:	fd 68 e3                      	mvtc	r14, fpsw
+      1e:	05 81 d2 01                   	bsr.a	0x1d29f
+      22:	05 00 f6 00                   	bsr.a	0xf622
+      26:	03                            	nop
+      27:	fb ee 00 00 01                	mov.l	#0x10000, r14
+      2c:	fd 68 e0                      	mvtc	r14, psw
+      2f:	05 f8 cd 01                   	bsr.a	0x1ce27
+      33:	00                            	brk
+      34:	02                            	rts
+      35:	04 03 09 04                   	bra.a	0x40938
+      39:	09                            	bra.s	0x42
+      3a:	02                            	rts
+      3b:	27 00                         	bn.b	0x3b
+      3d:	01                            	dbt
+      3e:	01                            	dbt
+      3f:	00                            	brk
+      40:	c0 32                         	mov.b	[r3], [r2]
+      42:	09                            	bra.s	0x4b
+      43:	04 00 00 03                   	bra.a	0x30043
+      47:	ff 00 ff                      	sub	r15, r15, r0
+      4a:	00                            	brk
+      4b:	07                            	*unknown*
+      4c:	05 01 02 40                   	bsr.a	0x40024d
+      50:	00                            	brk
+      51:	00                            	brk
+      52:	07                            	*unknown*
+      53:	05 82 02 40                   	bsr.a	0x4002d5
+      57:	00                            	brk
+      58:	00                            	brk
+      59:	07                            	*unknown*
+      5a:	05 83 03 40                   	bsr.a	0x4003dd
+      5e:	00                            	brk
+      5f:	50 0a                         	and	[r0].ub, r10
+      61:	03                            	nop
+      62:	52 00 4f 00                   	and	79[r0].ub, r0
+      66:	57 00                         	or	r0, r0
+      68:	45 00 28                      	cmp	40[r0].ub, r0
+      6b:	03                            	nop
+      6c:	52 00 4f 00                   	and	79[r0].ub, r0
+      70:	57 00                         	or	r0, r0
+      72:	45 00 20                      	cmp	32[r0].ub, r0
+      75:	00                            	brk
+      76:	44 00                         	cmp	[r0].ub, r0
+      78:	43 00                         	sub	r0, r0
+      7a:	55 00 20                      	or	32[r0].ub, r0
+      7d:	00                            	brk
+      7e:	42 00 6f 00                   	sub	111[r0].ub, r0
+      82:	6f 00                         	popm	r0-r0
+      84:	74 00 6c 00 6f 00             	cmp	#0x6f006c, r0
+      8a:	61 00                         	cmp	#0, r0
+      8c:	64 00                         	and	#0, r0
+      8e:	65 00                         	or	#0, r0
+      90:	72 00 08 03                   	add	#776, r0, r0
+      94:	31                            	*unknown*
+      95:	00                            	brk
+      96:	2e 00                         	bra.b	0x96
+      98:	31                            	*unknown*
+      99:	00                            	brk
+      9a:	66 6f                         	mov.l	#6, r15
+      9c:	6c 64                         	shll	#6, r4
+      9e:	5f 74                         	movu.w	r7, r4
+      a0:	6f 67                         	popm	r6-r7
+      a2:	67 6c                         	rtsd	#432
+      a4:	65 5f                         	or	#5, r15
+      a6:	6a 61                         	shar	#6, r1
+      a8:	6d 5f                         	shll	#21, r15
+      aa:	63 6f                         	mul	#6, r15
+      ac:	6e 74                         	pushm	r7-r4
+      ae:	72 6f 6c 5f                   	add	#0x5f6c, r6, r15
+      b2:	61 6c                         	cmp	#6, r12
+      b4:	6c 6f                         	shll	#6, r15
+      b6:	77 65                         	*unknown*
+      b8:	64 00                         	and	#0, r0
+      ba:	20 2b                         	beq.b	0xe5
+      bc:	2d 23                         	bno.b	0xdf
+      be:	30                            	*unknown*
+      bf:	2c 3b                         	bo.b	0xfa
+      c1:	3a 5f 00                      	beq.w	0x120
+      c4:	20 20                         	beq.b	0xe4
+      c6:	20 20                         	beq.b	0xe6
+      c8:	20 20                         	beq.b	0xe8
+      ca:	20 20                         	beq.b	0xea
+      cc:	20 20                         	beq.b	0xec
+      ce:	20 20                         	beq.b	0xee
+      d0:	20 20                         	beq.b	0xf0
+      d2:	20 20                         	beq.b	0xf2
+      d4:	20 20                         	beq.b	0xf4
+      d6:	20 20                         	beq.b	0xf6
+      d8:	20 20                         	beq.b	0xf8
+      da:	20 20                         	beq.b	0xfa
+      dc:	20 20                         	beq.b	0xfc
+      de:	20 20                         	beq.b	0xfe
+      e0:	20 20                         	beq.b	0x100
+      e2:	20 20                         	beq.b	0x102
+      e4:	00                            	brk
+      e5:	30                            	*unknown*
+      e6:	30                            	*unknown*
+      e7:	30                            	*unknown*
+      e8:	30                            	*unknown*
+      e9:	30                            	*unknown*
+      ea:	30                            	*unknown*
+      eb:	30                            	*unknown*
+      ec:	30                            	*unknown*
+      ed:	30                            	*unknown*
+      ee:	30                            	*unknown*
+      ef:	30                            	*unknown*
+      f0:	30                            	*unknown*
+      f1:	30                            	*unknown*
+      f2:	30                            	*unknown*
+      f3:	30                            	*unknown*
+      f4:	30                            	*unknown*
+      f5:	30                            	*unknown*
+      f6:	30                            	*unknown*
+      f7:	30                            	*unknown*
+      f8:	30                            	*unknown*
+      f9:	30                            	*unknown*
+      fa:	30                            	*unknown*
+      fb:	30                            	*unknown*
+      fc:	30                            	*unknown*
+      fd:	30                            	*unknown*
+      fe:	30                            	*unknown*
+      ff:	30                            	*unknown*
+     100:	30                            	*unknown*
+     101:	30                            	*unknown*
+     102:	30                            	*unknown*
+     103:	30                            	*unknown*
+     104:	30                            	*unknown*
+     105:	00                            	brk
+     106:	2a 2a                         	bgt.b	0x130
+     108:	2a 2a                         	bgt.b	0x132
+     10a:	2a 2a                         	bgt.b	0x134
+     10c:	2a 2a                         	bgt.b	0x136
+     10e:	2a 2a                         	bgt.b	0x138
+     110:	2a 2a                         	bgt.b	0x13a
+     112:	2a 2a                         	bgt.b	0x13c
+     114:	2a 2a                         	bgt.b	0x13e
+     116:	2a 2a                         	bgt.b	0x140
+     118:	2a 2a                         	bgt.b	0x142
+     11a:	2a 2a                         	bgt.b	0x144
+     11c:	2a 2a                         	bgt.b	0x146
+     11e:	2a 2a                         	bgt.b	0x148
+     120:	2a 2a                         	bgt.b	0x14a
+     122:	2a 2a                         	bgt.b	0x14c
+     124:	2a 2a                         	bgt.b	0x14e
+     126:	00                            	brk
+     127:	2b 2b                         	ble.b	0x152
+     129:	2b 2b                         	ble.b	0x154
+     12b:	2b 2b                         	ble.b	0x156
+     12d:	2b 2b                         	ble.b	0x158
+     12f:	2b 2b                         	ble.b	0x15a
+     131:	2b 2b                         	ble.b	0x15c
+     133:	2b 2b                         	ble.b	0x15e
+     135:	2b 2b                         	ble.b	0x160
+     137:	2b 2b                         	ble.b	0x162
+     139:	2b 2b                         	ble.b	0x164
+     13b:	2b 2b                         	ble.b	0x166
+     13d:	2b 2b                         	ble.b	0x168
+     13f:	2b 2b                         	ble.b	0x16a
+     141:	2b 2b                         	ble.b	0x16c
+     143:	2b 2b                         	ble.b	0x16e
+     145:	2b 2b                         	ble.b	0x170
+     147:	00                            	brk
+     148:	2d 2d                         	bno.b	0x175
+     14a:	2d 2d                         	bno.b	0x177
+     14c:	2d 2d                         	bno.b	0x179
+     14e:	2d 2d                         	bno.b	0x17b
+     150:	2d 2d                         	bno.b	0x17d
+     152:	2d 2d                         	bno.b	0x17f
+     154:	2d 2d                         	bno.b	0x181
+     156:	2d 2d                         	bno.b	0x183
+     158:	2d 2d                         	bno.b	0x185
+     15a:	2d 2d                         	bno.b	0x187
+     15c:	2d 2d                         	bno.b	0x189
+     15e:	2d 2d                         	bno.b	0x18b
+     160:	2d 2d                         	bno.b	0x18d
+     162:	2d 2d                         	bno.b	0x18f
+     164:	2d 2d                         	bno.b	0x191
+     166:	2d 2d                         	bno.b	0x193
+     168:	00                            	brk
+     169:	20 20                         	beq.b	0x189
+     16b:	20 20                         	beq.b	0x18b
+     16d:	20 20                         	beq.b	0x18d
+     16f:	20 20                         	beq.b	0x18f
+     171:	20 60                         	beq.b	0x1d1
+     173:	60 60                         	sub	#6, r0
+     175:	60 60                         	sub	#6, r0
+     177:	20 20                         	beq.b	0x197
+     179:	20 20                         	beq.b	0x199
+     17b:	20 20                         	beq.b	0x19b
+     17d:	20 20                         	beq.b	0x19d
+     17f:	20 20                         	beq.b	0x19f
+     181:	20 20                         	beq.b	0x1a1
+     183:	20 20                         	beq.b	0x1a3
+     185:	20 20                         	beq.b	0x1a5
+     187:	20 20                         	beq.b	0x1a7
+     189:	48 10                         	add	[r1].ub, r0
+     18b:	10                            	beq.s	0x193
+     18c:	10                            	beq.s	0x194
+     18d:	10                            	beq.s	0x195
+     18e:	10                            	beq.s	0x196
+     18f:	10                            	beq.s	0x197
+     190:	10                            	beq.s	0x198
+     191:	10                            	beq.s	0x199
+     192:	10                            	beq.s	0x19a
+     193:	10                            	beq.s	0x19b
+     194:	10                            	beq.s	0x19c
+     195:	10                            	beq.s	0x19d
+     196:	10                            	beq.s	0x19e
+     197:	10                            	beq.s	0x19f
+     198:	10                            	beq.s	0x1a0
+     199:	84 84                         	mov.b	r4, 18[r0]
+     19b:	84 84                         	mov.b	r4, 18[r0]
+     19d:	84 84                         	mov.b	r4, 18[r0]
+     19f:	84 84                         	mov.b	r4, 18[r0]
+     1a1:	84 84                         	mov.b	r4, 18[r0]
+     1a3:	10                            	beq.s	0x1ab
+     1a4:	10                            	beq.s	0x1ac
+     1a5:	10                            	beq.s	0x1ad
+     1a6:	10                            	beq.s	0x1ae
+     1a7:	10                            	beq.s	0x1af
+     1a8:	10                            	beq.s	0x1b0
+     1a9:	10                            	beq.s	0x1b1
+     1aa:	81 81                         	mov.b	r1, 6[r0]
+     1ac:	81 81                         	mov.b	r1, 6[r0]
+     1ae:	81 81                         	mov.b	r1, 6[r0]
+     1b0:	01                            	dbt
+     1b1:	01                            	dbt
+     1b2:	01                            	dbt
+     1b3:	01                            	dbt
+     1b4:	01                            	dbt
+     1b5:	01                            	dbt
+     1b6:	01                            	dbt
+     1b7:	01                            	dbt
+     1b8:	01                            	dbt
+     1b9:	01                            	dbt
+     1ba:	01                            	dbt
+     1bb:	01                            	dbt
+     1bc:	01                            	dbt
+     1bd:	01                            	dbt
+     1be:	01                            	dbt
+     1bf:	01                            	dbt
+     1c0:	01                            	dbt
+     1c1:	01                            	dbt
+     1c2:	01                            	dbt
+     1c3:	01                            	dbt
+     1c4:	10                            	beq.s	0x1cc
+     1c5:	10                            	beq.s	0x1cd
+     1c6:	10                            	beq.s	0x1ce
+     1c7:	10                            	beq.s	0x1cf
+     1c8:	10                            	beq.s	0x1d0
+     1c9:	10                            	beq.s	0x1d1
+     1ca:	82 82                         	mov.b	r2, 10[r0]
+     1cc:	82 82                         	mov.b	r2, 10[r0]
+     1ce:	82 82                         	mov.b	r2, 10[r0]
+     1d0:	02                            	rts
+     1d1:	02                            	rts
+     1d2:	02                            	rts
+     1d3:	02                            	rts
+     1d4:	02                            	rts
+     1d5:	02                            	rts
+     1d6:	02                            	rts
+     1d7:	02                            	rts
+     1d8:	02                            	rts
+     1d9:	02                            	rts
+     1da:	02                            	rts
+     1db:	02                            	rts
+     1dc:	02                            	rts
+     1dd:	02                            	rts
+     1de:	02                            	rts
+     1df:	02                            	rts
+     1e0:	02                            	rts
+     1e1:	02                            	rts
+     1e2:	02                            	rts
+     1e3:	02                            	rts
+     1e4:	10                            	beq.s	0x1ec
+     1e5:	10                            	beq.s	0x1ed
+     1e6:	10                            	beq.s	0x1ee
+     1e7:	10                            	beq.s	0x1ef
+     1e8:	20 00                         	beq.b	0x1e8
+	...
+     266:	00                            	brk
+     267:	00                            	brk
+     268:	00                            	brk
+     269:	30                            	*unknown*
+     26a:	31                            	*unknown*
+     26b:	32                            	*unknown*
+     26c:	33                            	*unknown*
+     26d:	34                            	*unknown*
+     26e:	35                            	*unknown*
+     26f:	36                            	*unknown*
+     270:	37                            	*unknown*
+     271:	38 39 61                      	bra.w	0x63aa
+     274:	62 63                         	add	#6, r3
+     276:	64 65                         	and	#6, r5
+     278:	66 00                         	mov.l	#0, r0
+     27a:	30                            	*unknown*
+     27b:	31                            	*unknown*
+     27c:	32                            	*unknown*
+     27d:	33                            	*unknown*
+     27e:	34                            	*unknown*
+     27f:	35                            	*unknown*
+     280:	36                            	*unknown*
+     281:	37                            	*unknown*
+     282:	38 39 41                      	bra.w	0x43bb
+     285:	42 43 44 45                   	sub	17732[r4].ub, r3
+     289:	46 00 00 00                   	cmp	0[r0].ub, r0
+     28d:	01                            	dbt
+     28e:	80 00                         	mov.b	r0, 0[r0]
+     290:	40 00                         	sub	[r0].ub, r0
+     292:	20 00                         	beq.b	0x292
+     294:	10                            	beq.s	0x29c
+     295:	00                            	brk
+     296:	08                            	bra.s	0x29e
+     297:	00                            	brk
+     298:	04 00 02 00                   	bra.a	0x498
+     29c:	01                            	dbt
+     29d:	00                            	brk
+     29e:	00                            	brk
+     29f:	00                            	brk
+     2a0:	80 00                         	mov.b	r0, 0[r0]
+     2a2:	80 00                         	mov.b	r0, 0[r0]
+     2a4:	80 00                         	mov.b	r0, 0[r0]
+     2a6:	80 00                         	mov.b	r0, 0[r0]
+     2a8:	80 00                         	mov.b	r0, 0[r0]
+     2aa:	80 00                         	mov.b	r0, 0[r0]
+     2ac:	80 00                         	mov.b	r0, 0[r0]
+     2ae:	80 00                         	mov.b	r0, 0[r0]
+     2b0:	80 00                         	mov.b	r0, 0[r0]
+     2b2:	c0 04                         	mov.b	[r0], [r4]
+     2b4:	c0 00                         	mov.b	[r0], [r0]
+     2b6:	c0 00                         	mov.b	[r0], [r0]
+     2b8:	c0 00                         	mov.b	[r0], [r0]
+     2ba:	c0 00                         	mov.b	[r0], [r0]
+     2bc:	80 00                         	mov.b	r0, 0[r0]
+     2be:	80 00                         	mov.b	r0, 0[r0]
+     2c0:	80 00                         	mov.b	r0, 0[r0]
+     2c2:	80 00                         	mov.b	r0, 0[r0]
+     2c4:	80 00                         	mov.b	r0, 0[r0]
+     2c6:	80 00                         	mov.b	r0, 0[r0]
+     2c8:	80 00                         	mov.b	r0, 0[r0]
+     2ca:	80 00                         	mov.b	r0, 0[r0]
+     2cc:	80 00                         	mov.b	r0, 0[r0]
+     2ce:	80 00                         	mov.b	r0, 0[r0]
+     2d0:	80 00                         	mov.b	r0, 0[r0]
+     2d2:	80 00                         	mov.b	r0, 0[r0]
+     2d4:	80 00                         	mov.b	r0, 0[r0]
+     2d6:	80 00                         	mov.b	r0, 0[r0]
+     2d8:	80 00                         	mov.b	r0, 0[r0]
+     2da:	80 00                         	mov.b	r0, 0[r0]
+     2dc:	80 00                         	mov.b	r0, 0[r0]
+     2de:	80 00                         	mov.b	r0, 0[r0]
+     2e0:	04 00 08 00                   	bra.a	0xae0
+     2e4:	08                            	bra.s	0x2ec
+     2e5:	00                            	brk
+     2e6:	08                            	bra.s	0x2ee
+     2e7:	00                            	brk
+     2e8:	08                            	bra.s	0x2f0
+     2e9:	00                            	brk
+     2ea:	08                            	bra.s	0x2f2
+     2eb:	00                            	brk
+     2ec:	08                            	bra.s	0x2f4
+     2ed:	00                            	brk
+     2ee:	08                            	bra.s	0x2f6
+     2ef:	00                            	brk
+     2f0:	08                            	bra.s	0x2f8
+     2f1:	00                            	brk
+     2f2:	08                            	bra.s	0x2fa
+     2f3:	00                            	brk
+     2f4:	08                            	bra.s	0x2fc
+     2f5:	00                            	brk
+     2f6:	08                            	bra.s	0x2fe
+     2f7:	00                            	brk
+     2f8:	08                            	bra.s	0x300
+     2f9:	00                            	brk
+     2fa:	08                            	bra.s	0x302
+     2fb:	00                            	brk
+     2fc:	08                            	bra.s	0x304
+     2fd:	00                            	brk
+     2fe:	08                            	bra.s	0x306
+     2ff:	00                            	brk
+     300:	21 00                         	bne.b	0x300
+     302:	21 00                         	bne.b	0x302
+     304:	21 00                         	bne.b	0x304
+     306:	21 00                         	bne.b	0x306
+     308:	21 00                         	bne.b	0x308
+     30a:	21 00                         	bne.b	0x30a
+     30c:	21 00                         	bne.b	0x30c
+     30e:	21 00                         	bne.b	0x30e
+     310:	21 00                         	bne.b	0x310
+     312:	21 00                         	bne.b	0x312
+     314:	08                            	bra.s	0x31c
+     315:	00                            	brk
+     316:	08                            	bra.s	0x31e
+     317:	00                            	brk
+     318:	08                            	bra.s	0x320
+     319:	00                            	brk
+     31a:	08                            	bra.s	0x322
+     31b:	00                            	brk
+     31c:	08                            	bra.s	0x324
+     31d:	00                            	brk
+     31e:	08                            	bra.s	0x326
+     31f:	00                            	brk
+     320:	08                            	bra.s	0x328
+     321:	00                            	brk
+     322:	03                            	nop
+     323:	00                            	brk
+     324:	03                            	nop
+     325:	00                            	brk
+     326:	03                            	nop
+     327:	00                            	brk
+     328:	03                            	nop
+     329:	00                            	brk
+     32a:	03                            	nop
+     32b:	00                            	brk
+     32c:	03                            	nop
+     32d:	00                            	brk
+     32e:	02                            	rts
+     32f:	00                            	brk
+     330:	02                            	rts
+     331:	00                            	brk
+     332:	02                            	rts
+     333:	00                            	brk
+     334:	02                            	rts
+     335:	00                            	brk
+     336:	02                            	rts
+     337:	00                            	brk
+     338:	02                            	rts
+     339:	00                            	brk
+     33a:	02                            	rts
+     33b:	00                            	brk
+     33c:	02                            	rts
+     33d:	00                            	brk
+     33e:	02                            	rts
+     33f:	00                            	brk
+     340:	02                            	rts
+     341:	00                            	brk
+     342:	02                            	rts
+     343:	00                            	brk
+     344:	02                            	rts
+     345:	00                            	brk
+     346:	02                            	rts
+     347:	00                            	brk
+     348:	02                            	rts
+     349:	00                            	brk
+     34a:	02                            	rts
+     34b:	00                            	brk
+     34c:	02                            	rts
+     34d:	00                            	brk
+     34e:	02                            	rts
+     34f:	00                            	brk
+     350:	02                            	rts
+     351:	00                            	brk
+     352:	02                            	rts
+     353:	00                            	brk
+     354:	02                            	rts
+     355:	00                            	brk
+     356:	08                            	bra.s	0x35e
+     357:	00                            	brk
+     358:	08                            	bra.s	0x360
+     359:	00                            	brk
+     35a:	08                            	bra.s	0x362
+     35b:	00                            	brk
+     35c:	08                            	bra.s	0x364
+     35d:	00                            	brk
+     35e:	08                            	bra.s	0x366
+     35f:	00                            	brk
+     360:	08                            	bra.s	0x368
+     361:	00                            	brk
+     362:	11                            	beq.s	0x36b
+     363:	00                            	brk
+     364:	11                            	beq.s	0x36d
+     365:	00                            	brk
+     366:	11                            	beq.s	0x36f
+     367:	00                            	brk
+     368:	11                            	beq.s	0x371
+     369:	00                            	brk
+     36a:	11                            	beq.s	0x373
+     36b:	00                            	brk
+     36c:	11                            	beq.s	0x375
+     36d:	00                            	brk
+     36e:	10                            	beq.s	0x376
+     36f:	00                            	brk
+     370:	10                            	beq.s	0x378
+     371:	00                            	brk
+     372:	10                            	beq.s	0x37a
+     373:	00                            	brk
+     374:	10                            	beq.s	0x37c
+     375:	00                            	brk
+     376:	10                            	beq.s	0x37e
+     377:	00                            	brk
+     378:	10                            	beq.s	0x380
+     379:	00                            	brk
+     37a:	10                            	beq.s	0x382
+     37b:	00                            	brk
+     37c:	10                            	beq.s	0x384
+     37d:	00                            	brk
+     37e:	10                            	beq.s	0x386
+     37f:	00                            	brk
+     380:	10                            	beq.s	0x388
+     381:	00                            	brk
+     382:	10                            	beq.s	0x38a
+     383:	00                            	brk
+     384:	10                            	beq.s	0x38c
+     385:	00                            	brk
+     386:	10                            	beq.s	0x38e
+     387:	00                            	brk
+     388:	10                            	beq.s	0x390
+     389:	00                            	brk
+     38a:	10                            	beq.s	0x392
+     38b:	00                            	brk
+     38c:	10                            	beq.s	0x394
+     38d:	00                            	brk
+     38e:	10                            	beq.s	0x396
+     38f:	00                            	brk
+     390:	10                            	beq.s	0x398
+     391:	00                            	brk
+     392:	10                            	beq.s	0x39a
+     393:	00                            	brk
+     394:	10                            	beq.s	0x39c
+     395:	00                            	brk
+     396:	08                            	bra.s	0x39e
+     397:	00                            	brk
+     398:	08                            	bra.s	0x3a0
+     399:	00                            	brk
+     39a:	08                            	bra.s	0x3a2
+     39b:	00                            	brk
+     39c:	08                            	bra.s	0x3a4
+     39d:	00                            	brk
+     39e:	80 00                         	mov.b	r0, 0[r0]
+	...
+     4a0:	01                            	dbt
+     4a1:	00                            	brk
+     4a2:	00                            	brk
+     4a3:	00                            	brk
+     4a4:	02                            	rts
+     4a5:	00                            	brk
+     4a6:	00                            	brk
+     4a7:	00                            	brk
+     4a8:	04 00 00 00                   	bra.a	0x4a8
+     4ac:	08                            	bra.s	0x4b4
+     4ad:	00                            	brk
+     4ae:	00                            	brk
+     4af:	00                            	brk
+     4b0:	10                            	beq.s	0x4b8
+     4b1:	00                            	brk
+     4b2:	00                            	brk
+     4b3:	00                            	brk
+     4b4:	20 00                         	beq.b	0x4b4
+     4b6:	00                            	brk
+     4b7:	00                            	brk
+     4b8:	40 00                         	sub	[r0].ub, r0
+     4ba:	00                            	brk
+     4bb:	00                            	brk
+     4bc:	80 00                         	mov.b	r0, 0[r0]
+     4be:	00                            	brk
+     4bf:	00                            	brk
+     4c0:	00                            	brk
+     4c1:	01                            	dbt
+     4c2:	00                            	brk
+     4c3:	00                            	brk
+     4c4:	00                            	brk
+     4c5:	02                            	rts
+     4c6:	00                            	brk
+     4c7:	00                            	brk
+     4c8:	00                            	brk
+     4c9:	04 00 00 00                   	bra.a	0x4c9
+     4cd:	08                            	bra.s	0x4d5
+     4ce:	00                            	brk
+     4cf:	00                            	brk
+     4d0:	00                            	brk
+     4d1:	10                            	beq.s	0x4d9
+     4d2:	00                            	brk
+     4d3:	00                            	brk
+     4d4:	00                            	brk
+     4d5:	20 00                         	beq.b	0x4d5
+     4d7:	00                            	brk
+     4d8:	00                            	brk
+     4d9:	40 00                         	sub	[r0].ub, r0
+     4db:	00                            	brk
+     4dc:	00                            	brk
+     4dd:	80 00                         	mov.b	r0, 0[r0]
+     4df:	00                            	brk
+     4e0:	00                            	brk
+     4e1:	00                            	brk
+     4e2:	01                            	dbt
+     4e3:	00                            	brk
+     4e4:	00                            	brk
+     4e5:	00                            	brk
+     4e6:	02                            	rts
+     4e7:	00                            	brk
+     4e8:	00                            	brk
+     4e9:	00                            	brk
+     4ea:	04 00 00 00                   	bra.a	0x4ea
+     4ee:	08                            	bra.s	0x4f6
+     4ef:	00                            	brk
+     4f0:	00                            	brk
+     4f1:	00                            	brk
+     4f2:	10                            	beq.s	0x4fa
+     4f3:	00                            	brk
+     4f4:	00                            	brk
+     4f5:	00                            	brk
+     4f6:	20 00                         	beq.b	0x4f6
+     4f8:	00                            	brk
+     4f9:	00                            	brk
+     4fa:	40 00                         	sub	[r0].ub, r0
+     4fc:	00                            	brk
+     4fd:	00                            	brk
+     4fe:	80 00                         	mov.b	r0, 0[r0]
+     500:	00                            	brk
+     501:	00                            	brk
+     502:	00                            	brk
+     503:	01                            	dbt
+     504:	00                            	brk
+     505:	00                            	brk
+     506:	00                            	brk
+     507:	02                            	rts
+     508:	00                            	brk
+     509:	00                            	brk
+     50a:	00                            	brk
+     50b:	04 00 00 00                   	bra.a	0x50b
+     50f:	08                            	bra.s	0x517
+     510:	00                            	brk
+     511:	00                            	brk
+     512:	00                            	brk
+     513:	10                            	beq.s	0x51b
+     514:	00                            	brk
+     515:	00                            	brk
+     516:	00                            	brk
+     517:	20 00                         	beq.b	0x517
+     519:	00                            	brk
+     51a:	00                            	brk
+     51b:	40 00                         	sub	[r0].ub, r0
+     51d:	00                            	brk
+     51e:	00                            	brk
+     51f:	80 00                         	mov.b	r0, 0[r0]
+     521:	02                            	rts
+     522:	09                            	bra.s	0x52b
+     523:	00                            	brk
+     524:	00                            	brk
+     525:	12                            	beq.s	0x52f
+     526:	09                            	bra.s	0x52f
+     527:	00                            	brk
+     528:	00                            	brk
+     529:	22 09                         	bc.b	0x532
+     52b:	00                            	brk
+     52c:	5b c1                         	movu.b	r12, r1
+     52e:	08                            	bra.s	0x536
+     52f:	00                            	brk
+     530:	63 c0                         	mul	#12, r0
+     532:	08                            	bra.s	0x53a
+     533:	00                            	brk
+     534:	03                            	nop
+     535:	c0 08                         	mov.b	[r0], [r8]
+     537:	00                            	brk
+     538:	43 c0                         	sub	r12, r0
+     53a:	08                            	bra.s	0x542
+     53b:	00                            	brk
+     53c:	08                            	bra.s	0x544
+     53d:	00                            	brk
+     53e:	00                            	brk
+     53f:	00                            	brk
+     540:	5a c1 08 00                   	movu.b	8[r12], r1
+     544:	63 c0                         	mul	#12, r0
+     546:	08                            	bra.s	0x54e
+     547:	00                            	brk
+     548:	03                            	nop
+     549:	c0 08                         	mov.b	[r0], [r8]
+     54b:	00                            	brk
+     54c:	23 c0                         	bnc.b	0x50c
+     54e:	08                            	bra.s	0x556
+     54f:	00                            	brk
+     550:	04 00 00 00                   	bra.a	0x550
+     554:	6d c1                         	shll	#28, r1
+     556:	08                            	bra.s	0x55e
+     557:	00                            	brk
+     558:	65 c0                         	or	#12, r0
+     55a:	08                            	bra.s	0x562
+     55b:	00                            	brk
+     55c:	05 c0 08 00                   	bsr.a	0xe1c
+     560:	45 c0 08                      	cmp	8[r12].ub, r0
+     563:	00                            	brk
+     564:	20 00                         	beq.b	0x564
+     566:	00                            	brk
+     567:	00                            	brk
+     568:	6c c1                         	shll	#12, r1
+     56a:	08                            	bra.s	0x572
+     56b:	00                            	brk
+     56c:	65 c0                         	or	#12, r0
+     56e:	08                            	bra.s	0x576
+     56f:	00                            	brk
+     570:	05 c0 08 00                   	bsr.a	0xe30
+     574:	25 c0                         	bleu.b	0x534
+     576:	08                            	bra.s	0x57e
+     577:	00                            	brk
+     578:	10                            	beq.s	0x580
+     579:	00                            	brk
+     57a:	00                            	brk
+     57b:	00                            	brk
+     57c:	77 c1                         	*unknown*
+     57e:	08                            	bra.s	0x586
+     57f:	00                            	brk
+     580:	66 c0                         	mov.l	#12, r0
+     582:	08                            	bra.s	0x58a
+     583:	00                            	brk
+     584:	06 c0 08                      	sub	[r0].uw, r8
+     587:	00                            	brk
+     588:	46 c0 08 00                   	cmp	8[r12].ub, r0
+     58c:	80 00                         	mov.b	r0, 0[r0]
+     58e:	00                            	brk
+     58f:	00                            	brk
+     590:	76 c1                         	*unknown*
+     592:	08                            	bra.s	0x59a
+     593:	00                            	brk
+     594:	66 c0                         	mov.l	#12, r0
+     596:	08                            	bra.s	0x59e
+     597:	00                            	brk
+     598:	06 c0 08                      	sub	[r0].uw, r8
+     59b:	00                            	brk
+     59c:	26 c0                         	bpz.b	0x55c
+     59e:	08                            	bra.s	0x5a6
+     59f:	00                            	brk
+     5a0:	40 00                         	sub	[r0].ub, r0
+     5a2:	00                            	brk
+     5a3:	00                            	brk
+     5a4:	00                            	brk
+     5a5:	f0 ff                         	bclr	#7, [r15].b
+     5a7:	00                            	brk
+     5a8:	00                            	brk
+     5a9:	e0 ff                         	mov.l	[r15], [r15]
+     5ab:	00                            	brk
+     5ac:	00                            	brk
+     5ad:	d0 ff                         	mov.w	[r15], [r15]
+     5af:	00                            	brk
+     5b0:	00                            	brk
+     5b1:	c0 ff                         	mov.b	[r15], [r15]
+     5b3:	00                            	brk
+     5b4:	00                            	brk
+     5b5:	b0 ff                         	movu.b	3[r7], r7
+     5b7:	00                            	brk
+     5b8:	00                            	brk
+     5b9:	a0 ff                         	mov.l	r7, 12[r7]
+     5bb:	00                            	brk
+     5bc:	00                            	brk
+     5bd:	90 ff                         	mov.w	r7, 6[r7]
+     5bf:	00                            	brk
+     5c0:	00                            	brk
+     5c1:	80 ff                         	mov.b	r7, 3[r7]
+     5c3:	00                            	brk
+     5c4:	00                            	brk
+     5c5:	40 ff                         	sub	[r15].ub, r15
+     5c7:	00                            	brk
+     5c8:	00                            	brk
+     5c9:	00                            	brk
+     5ca:	ff 00 00                      	sub	r0, r0, r0
+     5cd:	c0 fe                         	mov.b	[r15], [r14]
+     5cf:	00                            	brk
+     5d0:	00                            	brk
+     5d1:	80 fe                         	mov.b	r6, 3[r7]
+     5d3:	00                            	brk
+     5d4:	00                            	brk
+     5d5:	40 fe                         	sub	[r15].ub, r14
+     5d7:	00                            	brk
+     5d8:	00                            	brk
+     5d9:	00                            	brk
+     5da:	fe 00 00                      	mov.b	r0, [r0, r0]
+     5dd:	c0 fd                         	mov.b	[r15], [r13]
+     5df:	00                            	brk
+     5e0:	00                            	brk
+     5e1:	80 fd                         	mov.b	r5, 3[r7]
+     5e3:	00                            	brk
+     5e4:	00                            	brk
+     5e5:	40 fd                         	sub	[r15].ub, r13
+     5e7:	00                            	brk
+     5e8:	00                            	brk
+     5e9:	00                            	brk
+     5ea:	fd 00 00                      	mulhi	r0, r0, a0
+     5ed:	c0 fc                         	mov.b	[r15], [r12]
+     5ef:	00                            	brk
+     5f0:	00                            	brk
+     5f1:	80 fc                         	mov.b	r4, 3[r7]
+     5f3:	00                            	brk
+     5f4:	00                            	brk
+     5f5:	40 fc                         	sub	[r15].ub, r12
+     5f7:	00                            	brk
+     5f8:	00                            	brk
+     5f9:	00                            	brk
+     5fa:	fc 00                         	*unknown*
+     5fc:	00                            	brk
+     5fd:	c0 fb                         	mov.b	[r15], [r11]
+     5ff:	00                            	brk
+     600:	00                            	brk
+     601:	80 fb                         	mov.b	r3, 3[r7]
+     603:	00                            	brk
+     604:	00                            	brk
+     605:	40 fb                         	sub	[r15].ub, r11
+     607:	00                            	brk
+     608:	00                            	brk
+     609:	00                            	brk
+     60a:	fb 00 00 c0 fa 00             	mov.b	#0xfac000, r0
+     610:	00                            	brk
+     611:	80 fa                         	mov.b	r2, 3[r7]
+     613:	00                            	brk
+     614:	00                            	brk
+     615:	40 fa                         	sub	[r15].ub, r10
+     617:	00                            	brk
+     618:	00                            	brk
+     619:	00                            	brk
+     61a:	fa 00 00 c0 f9 00 00 80       	mov.b	#0x800000f9, 49152[r0]
+     622:	f9 00 00 40 f9 00 00          	mov.b	#0xf940, 0[r0]
+     629:	00                            	brk
+     62a:	f9 00 00 c0 f8 00 00          	mov.b	#0xf8c0, 0[r0]
+     631:	80 f8                         	mov.b	r0, 3[r7]
+     633:	00                            	brk
+     634:	00                            	brk
+     635:	40 f8                         	sub	[r15].ub, r8
+     637:	00                            	brk
+     638:	00                            	brk
+     639:	00                            	brk
+     63a:	f8 00 00 80 f7 00             	mov.b	#0xf78000, [r0]
+     640:	00                            	brk
+     641:	00                            	brk
+     642:	f7 00                         	btst	#0, r0
+     644:	00                            	brk
+     645:	80 f6                         	mov.b	r6, 2[r7]
+     647:	00                            	brk
+     648:	00                            	brk
+     649:	00                            	brk
+     64a:	f6 00 00 80                   	btst	#0, 32768[r0].b
+     64e:	f5 00 00                      	btst	#0, 0[r0].b
+     651:	00                            	brk
+     652:	f5 00 00                      	btst	#0, 0[r0].b
+     655:	80 f4                         	mov.b	r4, 2[r7]
+     657:	00                            	brk
+     658:	00                            	brk
+     659:	00                            	brk
+     65a:	f4 00                         	btst	#0, [r0].b
+     65c:	00                            	brk
+     65d:	80 f3                         	mov.b	r3, 2[r7]
+     65f:	00                            	brk
+     660:	00                            	brk
+     661:	00                            	brk
+     662:	f3 00                         	bset	#0, r0
+     664:	00                            	brk
+     665:	80 f2                         	mov.b	r2, 2[r7]
+     667:	00                            	brk
+     668:	00                            	brk
+     669:	00                            	brk
+     66a:	f2 00 00 80                   	bset	#0, 32768[r0].b
+     66e:	f1 00 00                      	bset	#0, 0[r0].b
+     671:	00                            	brk
+     672:	f1 00 00                      	bset	#0, 0[r0].b
+     675:	80 f0                         	mov.b	r0, 2[r7]
+     677:	00                            	brk
+     678:	00                            	brk
+     679:	00                            	brk
+     67a:	f0 00                         	bset	#0, [r0].b
+     67c:	00                            	brk
+     67d:	00                            	brk
+     67e:	ef 00                         	nop	; mov.l	r0, r0
+     680:	00                            	brk
+     681:	00                            	brk
+     682:	ee 00 00 00                   	mov.l	0[r0], r0
+     686:	ed 00 00                      	mov.l	0[r0], r0
+     689:	00                            	brk
+     68a:	ec 00                         	mov.l	[r0], r0
+     68c:	00                            	brk
+     68d:	00                            	brk
+     68e:	eb 00 00 00                   	mov.l	r0, 0[r0]
+     692:	ea 00 00 00 e9 00             	mov.l	0[r0], 932[r0]
+     698:	00                            	brk
+     699:	00                            	brk
+     69a:	e8 00 00 00                   	mov.l	[r0], 0[r0]
+     69e:	e7 00 00                      	mov.l	r0, 0[r0]
+     6a1:	00                            	brk
+     6a2:	e6 00 00 00 e5                	mov.l	0[r0], 916[r0]
+     6a7:	00                            	brk
+     6a8:	00                            	brk
+     6a9:	00                            	brk
+     6aa:	e4 00 00                      	mov.l	[r0], 0[r0]
+     6ad:	00                            	brk
+     6ae:	e3 00                         	mov.l	r0, [r0]
+     6b0:	00                            	brk
+     6b1:	00                            	brk
+     6b2:	e2 00 00 00                   	mov.l	0[r0], [r0]
+     6b6:	e1 00 00                      	mov.l	0[r0], [r0]
+     6b9:	00                            	brk
+     6ba:	e0 00                         	mov.l	[r0], [r0]
+     6bc:	00                            	brk
+     6bd:	00                            	brk
+     6be:	10                            	beq.s	0x6c6
+     6bf:	00                            	brk
+     6c0:	00                            	brk
+     6c1:	08                            	bra.s	0x6c9
+     6c2:	10                            	beq.s	0x6ca
+     6c3:	00                            	brk
+     6c4:	00                            	brk
+     6c5:	10                            	beq.s	0x6cd
+     6c6:	10                            	beq.s	0x6ce
+     6c7:	00                            	brk
+     6c8:	00                            	brk
+     6c9:	18                            	bne.s	0x6d1
+     6ca:	10                            	beq.s	0x6d2
+     6cb:	00                            	brk
+     6cc:	00                            	brk
+     6cd:	20 10                         	beq.b	0x6dd
+     6cf:	00                            	brk
+     6d0:	00                            	brk
+     6d1:	28 10                         	bge.b	0x6e1
+     6d3:	00                            	brk
+     6d4:	00                            	brk
+     6d5:	30                            	*unknown*
+     6d6:	10                            	beq.s	0x6de
+     6d7:	00                            	brk
+     6d8:	00                            	brk
+     6d9:	38 10 00                      	bra.w	0x6e9
+     6dc:	00                            	brk
+     6dd:	40 10                         	sub	[r1].ub, r0
+     6df:	00                            	brk
+     6e0:	00                            	brk
+     6e1:	48 10                         	add	[r1].ub, r0
+     6e3:	00                            	brk
+     6e4:	00                            	brk
+     6e5:	50 10                         	and	[r1].ub, r0
+     6e7:	00                            	brk
+     6e8:	00                            	brk
+     6e9:	58 10                         	movu.b	[r1], r0
+     6eb:	00                            	brk
+     6ec:	00                            	brk
+     6ed:	60 10                         	sub	#1, r0
+     6ef:	00                            	brk
+     6f0:	00                            	brk
+     6f1:	68 10                         	shlr	#1, r0
+     6f3:	00                            	brk
+     6f4:	00                            	brk
+     6f5:	70 10 00 00 78 10             	add	#0x10780000, r1, r0
+     6fb:	00                            	brk
+     6fc:	12                            	beq.s	0x706
+     6fd:	00                            	brk
+     6fe:	00                            	brk
+     6ff:	00                            	brk
+     700:	c8 3d 00 00                   	mov.b	[r3], 0[r13]
+     704:	27 00                         	bn.b	0x704
+     706:	00                            	brk
+     707:	00                            	brk
+     708:	39 00 f4                      	bsr.w	0xfffffb08
+     70b:	ff 0a 00                      	sub	r0, r0, r10
+     70e:	00                            	brk
+     70f:	00                            	brk
+     710:	60 00                         	sub	#0, r0
+     712:	f4 ff                         	*unknown*
+     714:	28 00                         	bge.b	0x714
+     716:	00                            	brk
+     717:	00                            	brk
+     718:	6a 00                         	shar	#0, r0
+     71a:	f4 ff                         	*unknown*
+     71c:	08                            	bra.s	0x724
+     71d:	00                            	brk
+     71e:	00                            	brk
+     71f:	00                            	brk
+     720:	92 00                         	mov.w	r0, 16[r0]
+     722:	f4 ff                         	*unknown*
+     724:	35                            	*unknown*
+     725:	00                            	brk
+     726:	f4 ff                         	*unknown*
+     728:	8c 02                         	mov.b	16[r0], r2
+     72a:	f4 ff                         	*unknown*
+     72c:	a0 04                         	mov.l	r4, 0[r0]
+     72e:	f4 ff                         	*unknown*
+     730:	70 1a f4 ff b8 1a             	add	#0x1ab8fff4, r1, r10
+     736:	f4 ff                         	*unknown*
+     738:	70 1a f4 ff 20 1c             	add	#0x1c20fff4, r1, r10
+     73e:	f4 ff                         	*unknown*
+     740:	00                            	brk
+     741:	14                            	beq.s	0x745
+     742:	00                            	brk
+     743:	00                            	brk
+     744:	8c 07                         	mov.b	16[r0], r7
+     746:	f4 ff                         	*unknown*
+     748:	b0 07                         	movu.b	0[r0], r7
+     74a:	f4 ff                         	*unknown*
+     74c:	c8 07 f4 ff                   	mov.b	[r0], 65524[r7]
+     750:	c8 0b f4 ff                   	mov.b	[r0], 65524[r11]
+     754:	c8 07 f4 ff                   	mov.b	[r0], 65524[r7]
+     758:	01                            	dbt
+     759:	00                            	brk
+     75a:	00                            	brk
+     75b:	00                            	brk
+     75c:	02                            	rts
+     75d:	00                            	brk
+     75e:	00                            	brk
+     75f:	00                            	brk
+     760:	04 00 00 00                   	bra.a	0x760
+     764:	08                            	bra.s	0x76c
+     765:	00                            	brk
+     766:	00                            	brk
+     767:	00                            	brk
+     768:	10                            	beq.s	0x770
+	...
+     771:	04 00 00 00                   	bra.a	0x771
+     775:	00                            	brk
+     776:	20 41                         	beq.b	0x7b7
+     778:	00                            	brk
+     779:	00                            	brk
+     77a:	c8 42 00 40                   	mov.b	[r4], 16384[r2]
+     77e:	1c                            	bne.s	0x782
+     77f:	46 20 bc be                   	cmp	48828[r2].ub, r0
+     783:	4c ca                         	mul	[r12].ub, r10
+     785:	1b                            	bne.s	0x788
+     786:	0e                            	bra.s	0x78c
+     787:	5a ae c5 9d                   	movu.b	40389[r10], r14
+     78b:	74 c8                         	*unknown*
+     78d:	0b                            	bra.s	0x790
+     78e:	f4 ff                         	*unknown*
+     790:	c8 10 f4 ff                   	mov.b	[r1], 65524[r0]
+     794:	00                            	brk
+     795:	c5 00 00 54                   	mov.b	0[r0], 84[r0]
+     799:	1a                            	bne.s	0x7a3
+     79a:	f4 ff                         	*unknown*
+     79c:	6e 1a                         	pushm	r1-r10
+     79e:	f4 ff                         	*unknown*
+     7a0:	88 47                         	mov.b	0[r4], r7
+     7a2:	00                            	brk
+     7a3:	00                            	brk
+     7a4:	c8 10 f4 ff                   	mov.b	[r1], 65524[r0]
+     7a8:	53 1a                         	and	r1, r10
+     7aa:	f4 ff                         	*unknown*
+     7ac:	8c 3c                         	mov.b	17[r3], r4
+     7ae:	00                            	brk
+     7af:	00                            	brk
+     7b0:	a4 47                         	mov.l	r7, 64[r4]
+     7b2:	00                            	brk
+     7b3:	00                            	brk
+     7b4:	00                            	brk
+     7b5:	c5 00 00 18                   	mov.b	0[r0], 24[r0]
+     7b9:	46 00 00 88                   	cmp	34816[r0].ub, r0
+     7bd:	47 00                         	cmp	r0, r0
+     7bf:	00                            	brk
+     7c0:	00                            	brk
+     7c1:	18                            	bne.s	0x7c9
+     7c2:	00                            	brk
+     7c3:	00                            	brk
+     7c4:	8c 3c                         	mov.b	17[r3], r4
+     7c6:	00                            	brk
+     7c7:	00                            	brk
+     7c8:	d9 6e f4 ff 00                	mov.w	488[r6], 510[r14]
+	...
+     835:	00                            	brk
+     836:	00                            	brk
+     837:	00                            	brk
+     838:	b7 eb                         	movu.b	31[r6], r3
+     83a:	f4 ff                         	*unknown*
+     83c:	cd eb f4                      	mov.b	244[r14], r11
+     83f:	ff e3                         	*unknown*
+     841:	eb f4 ff f9                   	mov.l	r4, 255996[r15]
+     845:	eb f4 ff 00                   	mov.l	r4, 1020[r15]
+	...
+     851:	00                            	brk
+     852:	00                            	brk
+     853:	00                            	brk
+     854:	12                            	beq.s	0x85e
+     855:	d0 f4                         	mov.w	[r15], [r4]
+     857:	ff 00 00                      	sub	r0, r0, r0
+	...
+     88e:	00                            	brk
+     88f:	00                            	brk
+     890:	bb e8                         	movu.w	30[r6], r0
+     892:	f4 ff                         	*unknown*
+     894:	cc e8                         	mov.b	[r14], r8
+     896:	f4 ff                         	*unknown*
+	...
+     8a0:	dd e8 f4                      	mov.w	488[r14], r8
+     8a3:	ff ee                         	*unknown*
+     8a5:	e8 f4 ff 00                   	mov.l	[r15], 1020[r4]
+	...
+     901:	00                            	brk
+     902:	00                            	brk
+     903:	00                            	brk
+     904:	cf 8a                         	mov.b	r8, r10
+     906:	f4 ff                         	*unknown*
+	...
+     938:	a9 00                         	mov.l	16[r0], r0
+     93a:	f5 ff                         	*unknown*
+     93c:	8b 00                         	mov.b	12[r0], r0
+     93e:	f5 ff                         	*unknown*
+	...
+     9c0:	a2 0e                         	mov.l	r6, 36[r0]
+     9c2:	f5 ff                         	*unknown*
+	...
+     9d8:	be 0e                         	movu.w	50[r0], r6
+     9da:	f5 ff                         	*unknown*
+     9dc:	00                            	brk
+     9dd:	00                            	brk
+     9de:	00                            	brk
+     9df:	00                            	brk
+     9e0:	da 0e f5 ff 00 00             	mov.w	131050[r0], 0[r14]
+	...
+     9ee:	00                            	brk
+     9ef:	00                            	brk
+     9f0:	f6 0e                         	*unknown*
+     9f2:	f5 ff                         	*unknown*
+	...
+     a00:	5e fa f4 ff                   	movu.w	131048[r15], r10
+	...
+     a20:	12                            	beq.s	0xa2a
+     a21:	0f                            	bra.s	0xa28
+     a22:	f5 ff                         	*unknown*
+     a24:	7a fa                         	bclr	#15, r10
+     a26:	f4 ff                         	*unknown*
+     a28:	2e 0f                         	bra.b	0xa37
+     a2a:	f5 ff                         	*unknown*
+	...
+     a34:	96 fa                         	mov.w	r2, 54[r7]
+     a36:	f4 ff                         	*unknown*
+     a38:	b2 fa                         	movu.b	11[r7], r2
+     a3a:	f4 ff                         	*unknown*
+	...
+     a58:	4a 0f f5 ff                   	add	65525[r0].ub, r15
+	...
+     a70:	c0 07                         	mov.b	[r0], [r7]
+     a72:	f5 ff                         	*unknown*
+	...
+     a7c:	d6 07 f5 ff 00                	mov.w	131050[r0], 0[r7]
+	...
+     a9d:	00                            	brk
+     a9e:	00                            	brk
+     a9f:	00                            	brk
+     aa0:	f5 fb f4                      	.byte 0xf5 0xfb 0xf4 
+     aa3:	ff a1 fc                      	fadd	r15, r12, r1
+     aa6:	f4 ff                         	*unknown*
+     aa8:	00                            	brk
+     aa9:	00                            	brk
+     aaa:	00                            	brk
+     aab:	00                            	brk
+     aac:	2f fd                         	b<invalid>.b	0xaa9
+     aae:	f4 ff                         	*unknown*
+	...
+     b20:	aa 05                         	mov.l	32[r0], r5
+     b22:	f5 ff                         	*unknown*
+     b24:	cc 05                         	mov.b	[r0], r5
+     b26:	f5 ff                         	*unknown*
+     b28:	bb 05                         	movu.w	24[r0], r5
+     b2a:	f5 ff                         	*unknown*
+     b2c:	d0 05                         	mov.w	[r0], [r5]
+     b2e:	f5 ff                         	*unknown*
+     b30:	f2 05 f5 ff                   	bset	#5, 65525[r0].b
+     b34:	e1 05 f5                      	mov.l	980[r0], [r5]
+     b37:	ff 00 00                      	sub	r0, r0, r0
+	...
+     b96:	00                            	brk
+     b97:	00                            	brk
+     b98:	f6 05 f5 ff                   	btst	#5, 65525[r0].b
+     b9c:	18                            	bne.s	0xba4
+     b9d:	06 f5                         	*unknown*
+     b9f:	ff 07 06                      	sub	r0, r6, r7
+     ba2:	f5 ff                         	*unknown*
+     ba4:	1c                            	bne.s	0xba8
+     ba5:	06 f5                         	*unknown*
+     ba7:	ff 3e 06                      	mul 	r0, r6, r14
+     baa:	f5 ff                         	*unknown*
+     bac:	2d 06                         	bno.b	0xbb2
+     bae:	f5 ff                         	*unknown*
+	...
+     bd8:	2c 1c                         	bo.b	0xbf4
+     bda:	f4 ff                         	*unknown*
+     bdc:	00                            	brk
+     bdd:	0a                            	bra.s	0xbe7
+     bde:	1a                            	bne.s	0xbe8
+     bdf:	06 1f                         	*unknown*
+     be1:	02                            	rts
+     be2:	02                            	rts
+     be3:	06 ea                         	*unknown*
+     be5:	76 f4                         	*unknown*
+     be7:	ff 00 00                      	sub	r0, r0, r0
+	...
+     c26:	00                            	brk
+     c27:	00                            	brk
+     c28:	4c 18                         	mul	[r1].ub, r8
+     c2a:	00                            	brk
+     c2b:	00                            	brk
+     c2c:	4c 18                         	mul	[r1].ub, r8
+     c2e:	00                            	brk
+     c2f:	00                            	brk
+     c30:	06 00 20                      	sub	[r2].b, r0
+     c33:	00                            	brk
+     c34:	20 00                         	beq.b	0xc34
+	...
+     c46:	00                            	brk
+     c47:	00                            	brk
+     c48:	d0 9f                         	mov.w	[r9], [r15]
+     c4a:	ff ff                         	*unknown*
+     c4c:	00                            	brk
+     c4d:	00                            	brk
+     c4e:	00                            	brk
+     c4f:	00                            	brk
+     c50:	00                            	brk
+     c51:	a0 ff                         	mov.l	r7, 12[r7]
+     c53:	ff 00 00                      	sub	r0, r0, r0
+	...
+     c72:	80 3f                         	mov.b	r7, 1[r3]
+     c74:	56 55 85 41                   	or	16773[r5].ub, r5
+     c78:	58 55                         	movu.b	[r5], r5
+     c7a:	d5 3f 58 55                   	mov.w	176[r3], 170[r15]
+     c7e:	d5 3f 00 00                   	mov.w	0[r3], 0[r15]
+	...
+     c8e:	00                            	brk
+     c8f:	00                            	brk
+     c90:	00                            	brk
+     c91:	4d 00 00                      	mul	0[r0].ub, r0
+     c94:	00                            	brk
+     c95:	4d 00 00                      	mul	0[r0].ub, r0
+     c98:	28 00                         	bge.b	0xc98
+     c9a:	20 00                         	beq.b	0xc9a
+     c9c:	20 00                         	beq.b	0xc9c
+	...
+     cd2:	00                            	brk
+     cd3:	00                            	brk
+     cd4:	35                            	*unknown*
+     cd5:	00                            	brk
+     cd6:	f4 ff                         	*unknown*
+     cd8:	04 00 00 00                   	bra.a	0xcd8
+	...
+     cf0:	01                            	dbt
+	...
+     d41:	00                            	brk
+     d42:	00                            	brk
+     d43:	00                            	brk
+     d44:	5c 56                         	movu.w	[r5], r6
+     d46:	00                            	brk
+     d47:	00                            	brk
+     d48:	2c 00                         	bo.b	0xd48
+     d4a:	20 00                         	beq.b	0xd4a
+	...
+     d9c:	e0 93                         	mov.l	[r9], [r3]
+     d9e:	04 00 00 00                   	bra.a	0xd9e
+	...
+     e1e:	00                            	brk
+     e1f:	00                            	brk
+     e20:	30                            	*unknown*
+     e21:	57 05                         	or	r0, r5
+	...
+     e2f:	00                            	brk
+     e30:	01                            	dbt
+     e31:	00                            	brk
+     e32:	00                            	brk
+     e33:	00                            	brk
+     e34:	b8 0b                         	movu.w	2[r0], r3
+	...
+     e7e:	00                            	brk
+     e7f:	00                            	brk
+     e80:	fc c0                         	*unknown*
+	...
+     e8a:	00                            	brk
+     e8b:	00                            	brk
+     e8c:	58 c8                         	movu.b	[r12], r8
+     e8e:	00                            	brk
+     e8f:	00                            	brk
+     e90:	01                            	dbt
+     e91:	00                            	brk
+     e92:	00                            	brk
+     e93:	00                            	brk
+     e94:	0c                            	bra.s	0xe98
+     e95:	c8 00 00 0d                   	mov.b	[r0], 3328[r0]
+     e99:	c8 00 00 0c                   	mov.b	[r0], 3072[r0]
+     e9d:	c8 00 00 0c                   	mov.b	[r0], 3072[r0]
+     ea1:	c8 00 00 0c                   	mov.b	[r0], 3072[r0]
+     ea5:	c8 00 00 0c                   	mov.b	[r0], 3072[r0]
+     ea9:	c8 00 00 ec                   	mov.b	[r0], 60416[r0]
+     ead:	c7 00 00                      	mov.b	r0, 0[r0]
+	...
+     ed8:	02                            	rts
+     ed9:	00                            	brk
+     eda:	01                            	dbt
+     edb:	01                            	dbt
+     edc:	54 c8                         	or	[r12].ub, r8
+     ede:	00                            	brk
+     edf:	00                            	brk
+     ee0:	55 c8 00                      	or	0[r12].ub, r8
+     ee3:	00                            	brk
+     ee4:	54 c8                         	or	[r12].ub, r8
+     ee6:	00                            	brk
+     ee7:	00                            	brk
+     ee8:	54 c8                         	or	[r12].ub, r8
+     eea:	00                            	brk
+     eeb:	00                            	brk
+     eec:	54 c8                         	or	[r12].ub, r8
+     eee:	00                            	brk
+     eef:	00                            	brk
+     ef0:	54 c8                         	or	[r12].ub, r8
+     ef2:	00                            	brk
+     ef3:	00                            	brk
+     ef4:	34                            	*unknown*
+     ef5:	c8 00 00 00                   	mov.b	[r0], 0[r0]
+	...
+     f1d:	00                            	brk
+     f1e:	00                            	brk
+     f1f:	00                            	brk
+     f20:	02                            	rts
+     f21:	08                            	bra.s	0xf29
+     f22:	02                            	rts
+     f23:	02                            	rts
+     f24:	c6 45 00 00 16                	mov.b	0[r4], 22[r5]
+     f29:	46 00 00 c6                   	cmp	50688[r0].ub, r0
+     f2d:	45 00 00                      	cmp	0[r0].ub, r0
+     f30:	c6 45 00 00 c6                	mov.b	0[r4], 198[r5]
+     f35:	45 00 00                      	cmp	0[r0].ub, r0
+     f38:	9c c8                         	mov.w	38[r4], r0
+     f3a:	00                            	brk
+     f3b:	00                            	brk
+     f3c:	7c c8                         	btst	#12, r8
+	...
+     f66:	00                            	brk
+     f67:	00                            	brk
+     f68:	a0 02                         	mov.l	r2, 0[r0]
+     f6a:	f4 ff                         	*unknown*
+	...
+     fb8:	8b 02                         	mov.b	12[r0], r2
+     fba:	f4 ff                         	*unknown*
+     fbc:	8b 02                         	mov.b	12[r0], r2
+     fbe:	f4 ff                         	*unknown*
+     fc0:	8b 02                         	mov.b	12[r0], r2
+     fc2:	f4 ff                         	*unknown*
+     fc4:	8b 02                         	mov.b	12[r0], r2
+     fc6:	f4 ff                         	*unknown*
+     fc8:	8b 02                         	mov.b	12[r0], r2
+     fca:	f4 ff                         	*unknown*
+     fcc:	8b 02                         	mov.b	12[r0], r2
+     fce:	f4 ff                         	*unknown*
+     fd0:	8b 02                         	mov.b	12[r0], r2
+     fd2:	f4 ff                         	*unknown*
+     fd4:	ff ff                         	*unknown*
+     fd6:	ff ff                         	*unknown*
+     fd8:	ff ff                         	*unknown*
+     fda:	ff ff                         	*unknown*
+     fdc:	ff ff                         	*unknown*
+     fde:	ff ff                         	*unknown*
+     fe0:	ff ff                         	*unknown*
+     fe2:	00                            	brk
+     fe3:	00                            	brk
+     fe4:	c0 6e                         	mov.b	[r6], [r14]
+     fe6:	f4 ff                         	*unknown*
+     fe8:	8b 02                         	mov.b	12[r0], r2
+     fea:	f4 ff                         	*unknown*
+     fec:	8b 02                         	mov.b	12[r0], r2
+     fee:	f4 ff                         	*unknown*
+     ff0:	8b 02                         	mov.b	12[r0], r2
+     ff2:	f4 ff                         	*unknown*
+     ff4:	8b 02                         	mov.b	12[r0], r2
+     ff6:	f4 ff                         	*unknown*
+     ff8:	c2 6e f4 ff                   	mov.b	65524[r6], [r14]
+     ffc:	c8 6e f4 ff                   	mov.b	[r6], 65524[r14]
+    1000:	8b 02                         	mov.b	12[r0], r2
+    1002:	f4 ff                         	*unknown*
+    1004:	8b 02                         	mov.b	12[r0], r2
+    1006:	f4 ff                         	*unknown*
+	...
+    1050:	01                            	dbt
+	...
+    1061:	00                            	brk
+    1062:	00                            	brk
+    1063:	33                            	*unknown*
+	...
+    1070:	00                            	brk
+    1071:	00                            	brk
+    1072:	80 7f                         	mov.b	r7, 1[r7]
+	...
+    1080:	00                            	brk
+    1081:	00                            	brk
+    1082:	80 7f                         	mov.b	r7, 1[r7]
+	...
+    1090:	00                            	brk
+    1091:	00                            	brk
+    1092:	c0 7f                         	mov.b	[r7], [r15]
+	...
+    10a0:	01                            	dbt
+    10a1:	00                            	brk
+    10a2:	80 7f                         	mov.b	r7, 1[r7]
+	...
+    10b0:	00                            	brk
+    10b1:	00                            	brk
+    10b2:	80 39                         	mov.b	r1, 1[r3]
+	...
+    10c0:	00                            	brk
+    10c1:	00                            	brk
+    10c2:	00                            	brk
+    10c3:	41 00 00                      	sub	0[r0].ub, r0
+    10c6:	00                            	brk
+    10c7:	00                            	brk
+    10c8:	00                            	brk
+    10c9:	00                            	brk
+    10ca:	00                            	brk
+    10cb:	00                            	brk
+    10cc:	00                            	brk
+    10cd:	01                            	dbt
+	...
+    10d6:	00                            	brk
+    10d7:	00                            	brk
+    10d8:	00                            	brk
+    10d9:	55 01 00                      	or	0[r0].ub, r1
+    10dc:	00                            	brk
+    10dd:	00                            	brk
+    10de:	00                            	brk
+    10df:	00                            	brk
+    10e0:	00                            	brk
+    10e1:	00                            	brk
+    10e2:	00                            	brk
+    10e3:	5e bc e2 61                   	movu.w	50116[r11], r12
+    10e7:	3f dd 83                      	rtsd	#524, r13-r13
+    10ea:	c2 9c 7e 20                   	mov.b	8318[r9], [r12]
+    10ee:	a3 fd                         	mov.l	r5, 60[r7]
+    10f0:	1f                            	bne.s	0x10f7
+    10f1:	41 9d c3                      	sub	195[r9].ub, r13
+    10f4:	21 7f                         	bne.b	0x1173
+    10f6:	fc a2 40 1e 5f                	fsqrt	97400[r4].l, r0
+    10fb:	01                            	dbt
+    10fc:	e3 bd                         	mov.l	r13, [r11]
+    10fe:	3e 60 82                      	mov.l	#130, 0[r6]
+    1101:	dc 23                         	mov.w	[r2], r3
+    1103:	7d 9f                         	btst	#25, r15
+    1105:	c1 42 1c                      	mov.b	28[r4], [r2]
+    1108:	fe a0                         	*unknown*
+    110a:	e1 bf 5d                      	mov.l	372[r11], [r15]
+    110d:	03                            	nop
+    110e:	80 de                         	mov.b	r6, 3[r5]
+    1110:	3c 62 be                      	mov.b	#190, 2[r6]
+    1113:	e0 02                         	mov.l	[r0], [r2]
+    1115:	5c df                         	movu.w	[r13], r15
+    1117:	81 63                         	mov.b	r3, 4[r6]
+    1119:	3d 7c 22                      	mov.w	#34, 24[r7]
+    111c:	c0 9e                         	mov.b	[r9], [r14]
+    111e:	1d                            	bne.s	0x1123
+    111f:	43 a1                         	sub	r10, r1
+    1121:	ff 46 18                      	and	r1, r8, r6
+    1124:	fa a4 27 79 9b                	mov.b	#155, 31015[r10]
+    1129:	c5 84 da 38                   	mov.b	218[r8], 56[r4]
+    112d:	66 e5                         	mov.l	#14, r5
+    112f:	bb 59                         	movu.w	26[r5], r1
+    1131:	07                            	*unknown*
+    1132:	db 85 67 39                   	mov.w	r5, 29390[r8]
+    1136:	ba e4                         	movu.w	20[r6], r4
+    1138:	06 58                         	*unknown*
+    113a:	19                            	bne.s	0x1143
+    113b:	47 a5                         	cmp	r10, r5
+    113d:	fb 78 26 c4                   	mov.b	#0xffffc426, r7
+    1141:	9a 65                         	mov.w	16[r6], r5
+    1143:	3b d9 87                      	bne.w	0xffff991c
+    1146:	04 5a b8 e6                   	bra.a	0xffe6c9a0
+    114a:	a7 f9                         	mov.l	r1, 124[r7]
+    114c:	1b                            	bne.s	0x114f
+    114d:	45 c6 98                      	cmp	152[r12].ub, r6
+    1150:	7a 24                         	bclr	#2, r4
+    1152:	f8 a6 44                      	mov.l	#68, [r10]
+    1155:	1a                            	bne.s	0x115f
+    1156:	99 c7                         	mov.w	12[r4], r7
+    1158:	25 7b                         	bleu.b	0x11d3
+    115a:	3a 64 86                      	beq.w	0xffff97be
+    115d:	d8 5b 05 e7                   	mov.w	[r5], 118282[r11]
+    1161:	b9 8c                         	movu.w	14[r0], r4
+    1163:	d2 30 6e ed                   	mov.w	121564[r3], [r0]
+    1167:	b3 51                         	movu.b	12[r5], r1
+    1169:	0f                            	bra.s	0x1170
+    116a:	4e 10 f2 ac                   	mul	44274[r1].ub, r0
+    116e:	2f 71                         	b<invalid>.b	0x11df
+    1170:	93 cd                         	mov.w	r5, 30[r4]
+    1172:	11                            	beq.s	0x117b
+    1173:	4f ad                         	mul	r10, r13
+    1175:	f3 70                         	bset	#0, r7
+    1177:	2e cc                         	bra.b	0x1143
+    1179:	92 d3                         	mov.w	r3, 20[r5]
+    117b:	8d 6f                         	mov.b	21[r6], r7
+    117d:	31                            	*unknown*
+    117e:	b2 ec                         	movu.b	11[r6], r4
+    1180:	0e                            	bra.s	0x1186
+    1181:	50 af                         	and	[r10].ub, r15
+    1183:	f1 13 4d                      	bset	#3, 77[r1].b
+    1186:	ce 90 72 2c                   	mov.b	11378[r9], r0
+    118a:	6d 33                         	shll	#19, r3
+    118c:	d1 8f 0c                      	mov.w	24[r8], [r15]
+    118f:	52 b0 ee 32                   	and	13038[r11].ub, r0
+    1193:	6c 8e                         	shll	#8, r14
+    1195:	d0 53                         	mov.w	[r5], [r3]
+    1197:	0d                            	bra.s	0x119c
+    1198:	ef b1                         	mov.l	r11, r1
+    119a:	f0 ae                         	bclr	#6, [r10].b
+    119c:	4c 12                         	mul	[r1].ub, r2
+    119e:	91 cf                         	mov.w	r7, 14[r4]
+    11a0:	2d 73                         	bno.b	0x1213
+    11a2:	ca 94 76 28 ab f5             	mov.b	10358[r9], 62891[r4]
+    11a8:	17                            	beq.s	0x11af
+    11a9:	49 08 56                      	add	86[r0].ub, r8
+    11ac:	b4 ea                         	movu.b	19[r6], r2
+    11ae:	69 37                         	shlr	#19, r7
+    11b0:	d5 8b 57 09                   	mov.w	174[r8], 18[r11]
+    11b4:	eb b5 36 68                   	mov.l	r5, 106712[r11]
+    11b8:	8a d4                         	mov.b	10[r5], r4
+    11ba:	95 cb                         	mov.w	r3, 46[r4]
+    11bc:	29 77                         	blt.b	0x1233
+    11be:	f4 aa                         	push.l	[r10]
+    11c0:	48 16                         	add	[r1].ub, r6
+    11c2:	e9 b7 55 0b 88                	mov.l	340[r11], 139308[r7]
+    11c7:	d6 34 6a 2b 75                	mov.w	22228[r3], 234[r4]
+    11cc:	97 c9                         	mov.w	r1, 62[r4]
+    11ce:	4a 14 f6 a8                   	add	43254[r1].ub, r4
+    11d2:	74 2a c8 96 15 4b             	and	#0x4b1596c8, r10
+    11d8:	a9 f7                         	mov.l	24[r7], r7
+    11da:	b6 e8                         	movu.b	27[r6], r0
+    11dc:	0a                            	bra.s	0x11e6
+    11dd:	54 d7                         	or	[r13].ub, r7
+    11df:	89 6b                         	mov.b	5[r6], r3
+    11e1:	35                            	*unknown*
+    11e2:	00                            	brk
+    11e3:	00                            	brk
+    11e4:	00                            	brk
+    11e5:	00                            	brk
+    11e6:	00                            	brk
+    11e7:	00                            	brk
+    11e8:	00                            	brk
+    11e9:	01                            	dbt
+    11ea:	00                            	brk
+    11eb:	00                            	brk
+    11ec:	00                            	brk
+    11ed:	00                            	brk
+    11ee:	00                            	brk
+    11ef:	01                            	dbt
+    11f0:	00                            	brk
+    11f1:	00                            	brk
+    11f2:	00                            	brk
+    11f3:	00                            	brk
+    11f4:	00                            	brk
+    11f5:	00                            	brk
+    11f6:	00                            	brk
+    11f7:	01                            	dbt
+    11f8:	00                            	brk
+    11f9:	00                            	brk
+    11fa:	01                            	dbt
+    11fb:	00                            	brk
+    11fc:	00                            	brk
+    11fd:	00                            	brk
+    11fe:	00                            	brk
+    11ff:	00                            	brk
+    1200:	01                            	dbt
+    1201:	00                            	brk
+    1202:	00                            	brk
+    1203:	00                            	brk
+    1204:	12                            	beq.s	0x120e
+    1205:	01                            	dbt
+    1206:	00                            	brk
+    1207:	02                            	rts
+    1208:	00                            	brk
+    1209:	00                            	brk
+    120a:	00                            	brk
+    120b:	40 00                         	sub	[r0].ub, r0
+    120d:	00                            	brk
+    120e:	00                            	brk
+    120f:	00                            	brk
+    1210:	00                            	brk
+    1211:	01                            	dbt
+    1212:	01                            	dbt
+    1213:	02                            	rts
+    1214:	03                            	nop
+    1215:	01                            	dbt
+    1216:	00                            	brk
+    1217:	01                            	dbt
+    1218:	00                            	brk
+    1219:	01                            	dbt
+	...
+    1226:	00                            	brk
+    1227:	00                            	brk
+    1228:	0c                            	bra.s	0x122c
+	...
+    1231:	00                            	brk
+    1232:	00                            	brk
+    1233:	00                            	brk
+    1234:	ff 00 00                      	sub	r0, r0, r0
+	...
+    1243:	01                            	dbt
+    1244:	00                            	brk
+    1245:	00                            	brk
+    1246:	00                            	brk
+    1247:	00                            	brk
+    1248:	00                            	brk
+    1249:	01                            	dbt
+    124a:	01                            	dbt
+    124b:	00                            	brk
+    124c:	00                            	brk
+    124d:	00                            	brk
+    124e:	00                            	brk
+    124f:	00                            	brk
+    1250:	00                            	brk
+    1251:	31                            	*unknown*
+    1252:	39 38 5f                      	bsr.w	0x718a
+    1255:	32                            	*unknown*
+    1256:	39 37 00                      	bsr.w	0x128d
+	...
+    1281:	00                            	brk
+    1282:	00                            	brk
+    1283:	01                            	dbt
+    1284:	00                            	brk
+    1285:	70 05 03 00 00 00             	add	#3, r0, r5
+    128b:	28 88                         	bge.b	0x1213
+    128d:	04 00 02 00                   	bra.a	0x148d
+	...
+    12a1:	32                            	*unknown*
+    12a2:	31                            	*unknown*
+    12a3:	30                            	*unknown*
+    12a4:	5f 32                         	movu.w	r3, r2
+    12a6:	39 37 00                      	bsr.w	0x12dd
+	...
+    12d1:	00                            	brk
+    12d2:	00                            	brk
+    12d3:	01                            	dbt
+    12d4:	00                            	brk
+    12d5:	50 34                         	and	[r3].ub, r4
+    12d7:	03                            	nop
+    12d8:	00                            	brk
+    12d9:	00                            	brk
+    12da:	00                            	brk
+    12db:	28 88                         	bge.b	0x1263
+    12dd:	04 00 02 00                   	bra.a	0x14dd
+	...
+    12f1:	32                            	*unknown*
+    12f2:	31                            	*unknown*
+    12f3:	30                            	*unknown*
+    12f4:	50 5f                         	and	[r5].ub, r15
+    12f6:	32                            	*unknown*
+    12f7:	39 37 00                      	bsr.w	0x132e
+	...
+    1322:	00                            	brk
+    1323:	01                            	dbt
+    1324:	01                            	dbt
+    1325:	50 34                         	and	[r3].ub, r4
+    1327:	03                            	nop
+    1328:	00                            	brk
+    1329:	00                            	brk
+    132a:	00                            	brk
+    132b:	28 88                         	bge.b	0x12b3
+    132d:	04 00 02 00                   	bra.a	0x152d
+	...
+    1341:	31                            	*unknown*
+    1342:	39 30 5f                      	bsr.w	0x7272
+    1345:	32                            	*unknown*
+    1346:	30                            	*unknown*
+    1347:	5f 32                         	movu.w	r3, r2
+    1349:	39 37 00                      	bsr.w	0x1380
+	...
+    1370:	00                            	brk
+    1371:	00                            	brk
+    1372:	00                            	brk
+    1373:	01                            	dbt
+    1374:	00                            	brk
+    1375:	30                            	*unknown*
+    1376:	e6 02 00 20 4e                	mov.l	32768[r0], 312[r2]
+    137b:	28 88                         	bge.b	0x1303
+    137d:	04 00 02 00                   	bra.a	0x157d
+	...
+    1391:	31                            	*unknown*
+    1392:	38 35 5f                      	bra.w	0x72c7
+    1395:	32                            	*unknown*
+    1396:	35                            	*unknown*
+    1397:	5f 32                         	movu.w	r3, r2
+    1399:	39 37 00                      	bsr.w	0x13d0
+	...
+    13c0:	00                            	brk
+    13c1:	00                            	brk
+    13c2:	00                            	brk
+    13c3:	01                            	dbt
+    13c4:	00                            	brk
+    13c5:	a8 d2                         	mov.l	8[r5], r2
+    13c7:	02                            	rts
+    13c8:	00                            	brk
+    13c9:	a8 61                         	mov.l	0[r6], r1
+    13cb:	28 88                         	bge.b	0x1353
+    13cd:	04 00 02 00                   	bra.a	0x15cd
+	...
+    13e1:	31                            	*unknown*
+    13e2:	38 30 5f                      	bra.w	0x7312
+    13e5:	33                            	*unknown*
+    13e6:	30                            	*unknown*
+    13e7:	5f 32                         	movu.w	r3, r2
+    13e9:	39 37 00                      	bsr.w	0x1420
+	...
+    1410:	00                            	brk
+    1411:	00                            	brk
+    1412:	00                            	brk
+    1413:	01                            	dbt
+    1414:	00                            	brk
+    1415:	20 bf                         	beq.b	0x13d4
+    1417:	02                            	rts
+    1418:	00                            	brk
+    1419:	30                            	*unknown*
+    141a:	75 28 88                      	and	#-120, r8
+    141d:	04 00 02 00                   	bra.a	0x161d
+	...
+    1431:	31                            	*unknown*
+    1432:	39 38 5f                      	bsr.w	0x736a
+    1435:	33                            	*unknown*
+    1436:	30                            	*unknown*
+    1437:	35                            	*unknown*
+	...
+    1460:	00                            	brk
+    1461:	00                            	brk
+    1462:	00                            	brk
+    1463:	01                            	dbt
+    1464:	00                            	brk
+    1465:	70 05 03 00 00 00             	add	#3, r0, r5
+    146b:	68 a7                         	shlr	#10, r7
+    146d:	04 00 02 00                   	bra.a	0x166d
+	...
+    1481:	32                            	*unknown*
+    1482:	31                            	*unknown*
+    1483:	30                            	*unknown*
+    1484:	5f 33                         	movu.w	r3, r3
+    1486:	30                            	*unknown*
+    1487:	35                            	*unknown*
+	...
+    14b0:	00                            	brk
+    14b1:	00                            	brk
+    14b2:	00                            	brk
+    14b3:	01                            	dbt
+    14b4:	00                            	brk
+    14b5:	50 34                         	and	[r3].ub, r4
+    14b7:	03                            	nop
+    14b8:	00                            	brk
+    14b9:	00                            	brk
+    14ba:	00                            	brk
+    14bb:	68 a7                         	shlr	#10, r7
+    14bd:	04 00 02 00                   	bra.a	0x16bd
+	...
+    14d1:	32                            	*unknown*
+    14d2:	31                            	*unknown*
+    14d3:	30                            	*unknown*
+    14d4:	50 5f                         	and	[r5].ub, r15
+    14d6:	33                            	*unknown*
+    14d7:	30                            	*unknown*
+    14d8:	35                            	*unknown*
+	...
+    1501:	00                            	brk
+    1502:	00                            	brk
+    1503:	01                            	dbt
+    1504:	01                            	dbt
+    1505:	50 34                         	and	[r3].ub, r4
+    1507:	03                            	nop
+    1508:	00                            	brk
+    1509:	00                            	brk
+    150a:	00                            	brk
+    150b:	68 a7                         	shlr	#10, r7
+    150d:	04 00 02 00                   	bra.a	0x170d
+	...
+    1521:	31                            	*unknown*
+    1522:	39 30 5f                      	bsr.w	0x7452
+    1525:	32                            	*unknown*
+    1526:	30                            	*unknown*
+    1527:	5f 33                         	movu.w	r3, r3
+    1529:	30                            	*unknown*
+    152a:	35                            	*unknown*
+	...
+    1553:	01                            	dbt
+    1554:	00                            	brk
+    1555:	30                            	*unknown*
+    1556:	e6 02 00 20 4e                	mov.l	32768[r0], 312[r2]
+    155b:	68 a7                         	shlr	#10, r7
+    155d:	04 00 02 00                   	bra.a	0x175d
+	...
+    1571:	31                            	*unknown*
+    1572:	38 35 5f                      	bra.w	0x74a7
+    1575:	32                            	*unknown*
+    1576:	35                            	*unknown*
+    1577:	5f 33                         	movu.w	r3, r3
+    1579:	30                            	*unknown*
+    157a:	35                            	*unknown*
+	...
+    15a3:	01                            	dbt
+    15a4:	00                            	brk
+    15a5:	a8 d2                         	mov.l	8[r5], r2
+    15a7:	02                            	rts
+    15a8:	00                            	brk
+    15a9:	a8 61                         	mov.l	0[r6], r1
+    15ab:	68 a7                         	shlr	#10, r7
+    15ad:	04 00 02 00                   	bra.a	0x17ad
+	...
+    15c1:	31                            	*unknown*
+    15c2:	38 30 5f                      	bra.w	0x74f2
+    15c5:	33                            	*unknown*
+    15c6:	30                            	*unknown*
+    15c7:	5f 33                         	movu.w	r3, r3
+    15c9:	30                            	*unknown*
+    15ca:	35                            	*unknown*
+	...
+    15f3:	01                            	dbt
+    15f4:	00                            	brk
+    15f5:	20 bf                         	beq.b	0x15b4
+    15f7:	02                            	rts
+    15f8:	00                            	brk
+    15f9:	30                            	*unknown*
+    15fa:	75 68                         	*unknown*
+    15fc:	a7 04                         	mov.l	r4, 112[r0]
+    15fe:	00                            	brk
+    15ff:	02                            	rts
+	...
+    1610:	00                            	brk
+    1611:	37                            	*unknown*
+    1612:	2e 35                         	bra.b	0x1647
+    1614:	22 5f                         	bc.b	0x1673
+    1616:	31                            	*unknown*
+    1617:	31                            	*unknown*
+    1618:	22 00                         	bc.b	0x1618
+	...
+    1642:	00                            	brk
+    1643:	01                            	dbt
+    1644:	00                            	brk
+    1645:	24 e8                         	bgtu.b	0x162d
+    1647:	02                            	rts
+    1648:	00                            	brk
+    1649:	00                            	brk
+    164a:	00                            	brk
+    164b:	68 43                         	shlr	#4, r3
+    164d:	04 00 02 00                   	bra.a	0x184d
+	...
+    1661:	38 22 5f                      	bra.w	0x7583
+    1664:	31                            	*unknown*
+    1665:	31                            	*unknown*
+    1666:	22 00                         	bc.b	0x1666
+	...
+    1690:	00                            	brk
+    1691:	00                            	brk
+    1692:	00                            	brk
+    1693:	01                            	dbt
+    1694:	00                            	brk
+    1695:	c0 19                         	mov.b	[r1], [r9]
+    1697:	03                            	nop
+    1698:	00                            	brk
+    1699:	00                            	brk
+    169a:	00                            	brk
+    169b:	68 43                         	shlr	#4, r3
+    169d:	04 00 02 00                   	bra.a	0x189d
+	...
+    16b1:	38 2e 35                      	bra.w	0x4bdf
+    16b4:	22 5f                         	bc.b	0x1713
+    16b6:	31                            	*unknown*
+    16b7:	31                            	*unknown*
+    16b8:	22 00                         	bc.b	0x16b8
+	...
+    16e2:	00                            	brk
+    16e3:	01                            	dbt
+    16e4:	00                            	brk
+    16e5:	5c 4b                         	movu.w	[r4], r11
+    16e7:	03                            	nop
+    16e8:	00                            	brk
+    16e9:	00                            	brk
+    16ea:	00                            	brk
+    16eb:	68 43                         	shlr	#4, r3
+    16ed:	04 00 02 00                   	bra.a	0x18ed
+	...
+    1701:	39 22 5f                      	bsr.w	0x7623
+    1704:	31                            	*unknown*
+    1705:	31                            	*unknown*
+    1706:	22 00                         	bc.b	0x1706
+	...
+    1730:	00                            	brk
+    1731:	00                            	brk
+    1732:	00                            	brk
+    1733:	01                            	dbt
+    1734:	00                            	brk
+    1735:	f8 7c 03 00 00                	mov.b	#3, [r7]
+    173a:	00                            	brk
+    173b:	68 43                         	shlr	#4, r3
+    173d:	04 00 02 00                   	bra.a	0x193d
+	...
+    1751:	37                            	*unknown*
+    1752:	2e 35                         	bra.b	0x1787
+    1754:	22 5f                         	bc.b	0x17b3
+    1756:	31                            	*unknown*
+    1757:	22 5f                         	bc.b	0x17b6
+    1759:	31                            	*unknown*
+    175a:	31                            	*unknown*
+    175b:	22 00                         	bc.b	0x175b
+	...
+    1781:	00                            	brk
+    1782:	00                            	brk
+    1783:	01                            	dbt
+    1784:	00                            	brk
+    1785:	24 e8                         	bgtu.b	0x176d
+    1787:	02                            	rts
+    1788:	00                            	brk
+    1789:	38 63 68                      	bra.w	0x7fec
+    178c:	43 04                         	sub	r0, r4
+    178e:	00                            	brk
+    178f:	02                            	rts
+	...
+    17a0:	00                            	brk
+    17a1:	37                            	*unknown*
+    17a2:	2e 32                         	bra.b	0x17d4
+    17a4:	35                            	*unknown*
+    17a5:	22 5f                         	bc.b	0x1804
+    17a7:	31                            	*unknown*
+    17a8:	2e 32                         	bra.b	0x17da
+    17aa:	35                            	*unknown*
+    17ab:	22 5f                         	bc.b	0x180a
+    17ad:	31                            	*unknown*
+    17ae:	31                            	*unknown*
+    17af:	22 00                         	bc.b	0x17af
+	...
+    17d1:	00                            	brk
+    17d2:	00                            	brk
+    17d3:	01                            	dbt
+    17d4:	00                            	brk
+    17d5:	56 cf 02 00                   	or	2[r12].ub, r15
+    17d9:	06 7c                         	*unknown*
+    17db:	68 43                         	shlr	#4, r3
+    17dd:	04 00 02 00                   	bra.a	0x19dd
+	...
+    17f1:	37                            	*unknown*
+    17f2:	2e 35                         	bra.b	0x1827
+    17f4:	22 5f                         	bc.b	0x1853
+    17f6:	31                            	*unknown*
+    17f7:	32                            	*unknown*
+    17f8:	22 00                         	bc.b	0x17f8
+	...
+    1822:	00                            	brk
+    1823:	01                            	dbt
+    1824:	00                            	brk
+    1825:	24 e8                         	bgtu.b	0x180d
+    1827:	02                            	rts
+    1828:	00                            	brk
+    1829:	00                            	brk
+    182a:	00                            	brk
+    182b:	a0 a6                         	mov.l	r6, 8[r2]
+    182d:	04 00 02 00                   	bra.a	0x1a2d
+	...
+    1841:	38 22 5f                      	bra.w	0x7763
+    1844:	31                            	*unknown*
+    1845:	32                            	*unknown*
+    1846:	22 00                         	bc.b	0x1846
+	...
+    1870:	00                            	brk
+    1871:	00                            	brk
+    1872:	00                            	brk
+    1873:	01                            	dbt
+    1874:	00                            	brk
+    1875:	c0 19                         	mov.b	[r1], [r9]
+    1877:	03                            	nop
+    1878:	00                            	brk
+    1879:	00                            	brk
+    187a:	00                            	brk
+    187b:	a0 a6                         	mov.l	r6, 8[r2]
+    187d:	04 00 02 00                   	bra.a	0x1a7d
+	...
+    1891:	38 2e 35                      	bra.w	0x4dbf
+    1894:	22 5f                         	bc.b	0x18f3
+    1896:	31                            	*unknown*
+    1897:	32                            	*unknown*
+    1898:	22 00                         	bc.b	0x1898
+	...
+    18c2:	00                            	brk
+    18c3:	01                            	dbt
+    18c4:	00                            	brk
+    18c5:	5c 4b                         	movu.w	[r4], r11
+    18c7:	03                            	nop
+    18c8:	00                            	brk
+    18c9:	00                            	brk
+    18ca:	00                            	brk
+    18cb:	a0 a6                         	mov.l	r6, 8[r2]
+    18cd:	04 00 02 00                   	bra.a	0x1acd
+	...
+    18e1:	39 22 5f                      	bsr.w	0x7803
+    18e4:	31                            	*unknown*
+    18e5:	32                            	*unknown*
+    18e6:	22 00                         	bc.b	0x18e6
+	...
+    1910:	00                            	brk
+    1911:	00                            	brk
+    1912:	00                            	brk
+    1913:	01                            	dbt
+    1914:	00                            	brk
+    1915:	f8 7c 03 00 00                	mov.b	#3, [r7]
+    191a:	00                            	brk
+    191b:	a0 a6                         	mov.l	r6, 8[r2]
+    191d:	04 00 02 00                   	bra.a	0x1b1d
+	...
+    1931:	37                            	*unknown*
+    1932:	2e 35                         	bra.b	0x1967
+    1934:	22 5f                         	bc.b	0x1993
+    1936:	31                            	*unknown*
+    1937:	22 5f                         	bc.b	0x1996
+    1939:	31                            	*unknown*
+    193a:	32                            	*unknown*
+    193b:	22 00                         	bc.b	0x193b
+	...
+    1961:	00                            	brk
+    1962:	00                            	brk
+    1963:	01                            	dbt
+    1964:	00                            	brk
+    1965:	24 e8                         	bgtu.b	0x194d
+    1967:	02                            	rts
+    1968:	00                            	brk
+    1969:	38 63 a0                      	bra.w	0xffffb9cc
+    196c:	a6 04                         	mov.l	r4, 96[r0]
+    196e:	00                            	brk
+    196f:	02                            	rts
+	...
+    1980:	00                            	brk
+    1981:	37                            	*unknown*
+    1982:	2e 32                         	bra.b	0x19b4
+    1984:	35                            	*unknown*
+    1985:	22 5f                         	bc.b	0x19e4
+    1987:	31                            	*unknown*
+    1988:	2e 32                         	bra.b	0x19ba
+    198a:	35                            	*unknown*
+    198b:	22 5f                         	bc.b	0x19ea
+    198d:	31                            	*unknown*
+    198e:	32                            	*unknown*
+    198f:	22 00                         	bc.b	0x198f
+	...
+    19b1:	00                            	brk
+    19b2:	00                            	brk
+    19b3:	01                            	dbt
+    19b4:	00                            	brk
+    19b5:	56 cf 02 00                   	or	2[r12].ub, r15
+    19b9:	06 7c                         	*unknown*
+    19bb:	a0 a6                         	mov.l	r6, 8[r2]
+    19bd:	04 00 02 00                   	bra.a	0x1bbd
+	...
+    19dd:	00                            	brk
+    19de:	00                            	brk
+    19df:	03                            	nop
+	...
+    19f4:	00                            	brk
+    19f5:	00                            	brk
+    19f6:	00                            	brk
+    19f7:	64 00                         	and	#0, r0
+	...
